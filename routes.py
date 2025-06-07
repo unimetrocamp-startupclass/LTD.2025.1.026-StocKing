@@ -1,8 +1,9 @@
 import functools
-from flask import Blueprint, render_template, request, redirect, url_for, flash, session
+from flask import Blueprint, render_template, request, redirect, url_for, flash, session, send_file
 from datetime import datetime
 from db import db
 from models import User, Product
+from analysis_generator import generate_reports
 
 main = Blueprint('main', __name__)
 
@@ -144,3 +145,24 @@ def delete_product(id):
         db.session.rollback()
         flash(f'Erro ao deletar produto: {e}', 'danger')
     return redirect(url_for('main.dashboard'))
+
+# --- ROTA PARA GERAR E BAIXAR RELATÓRIO ---
+@main.route('/gerar-relatorio')
+@permission_required
+def gerar_relatorio():
+    flash('Seu relatório está sendo gerado. O download começará em breve.', 'info')
+    
+    # Chama nossa função que gera os relatórios e pega o caminho do CSV
+    path_do_csv = generate_reports()
+    
+    if path_do_csv:
+        try:
+            # Envia o arquivo para o usuário como um anexo para download
+            return send_file(path_do_csv, as_attachment=True)
+        except Exception as e:
+            flash(f"Erro ao tentar enviar o arquivo: {e}", "danger")
+            return redirect(url_for('main.dashboard'))
+    else:
+        # Caso não haja dados para gerar o relatório
+        flash('Não há produtos cadastrados para gerar um relatório.', 'warning')
+        return redirect(url_for('main.dashboard'))
