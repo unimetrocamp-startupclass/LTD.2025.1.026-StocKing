@@ -175,6 +175,8 @@ graph TD
 
     I --> B
 
+```
+
 ## Tecnologias Utilizadas
 
 - **HTML/CSS:** Interface web.
@@ -254,6 +256,8 @@ def create_app():
         db.create_all()
 
     return app
+
+```
 
 # --- EXECUÇÃO ---
 if __name__ == '__main__':
