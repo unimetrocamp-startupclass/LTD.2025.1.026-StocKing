@@ -49,6 +49,7 @@ Com o objetivo de auxiliar no controle de entradas e saídas, cadastro e identif
 |------------------------------|---------|-----------------------------------------|
 | Erick Valente Sprogis        |   ADS   | Programação Orientada a Objetos em Java |
 | Jhonatan Victor Conde Ramos  |   ADS   | Programação Orientada a Objetos em Java |
+| Gustavo Henrique Ribeiro     |   ADS   |          Calouro Auxiliar               |
 
 **Professor Orientador:** Kesede Rodrigues Julio
 
@@ -58,7 +59,7 @@ Com o objetivo de auxiliar no controle de entradas e saídas, cadastro e identif
 
 O projeto **StocKing** busca oferecer uma solução acessível para empresas com dificuldades em organizar seu estoque, almoxarifado. A proposta consiste em desenvolver um sistema que permita o controle organizacional de produtos, os que chegam, os que saem. Coordenar a etiquetagem de acordo e consecutivamente o cadastrar tudo no banco de dados, onde será feito o controle.
 
-Desenvolvido com **Pyhton Flask** no frontend,**Java** no backend e **PostgreSQL** para banco de dados, o sistema será simples e intuitivo, promovendo autonomia para seus usuários.
+Desenvolvido com **Pyhton Flask** e **SQLAlchemy**, o sistema será simples e intuitivo, promovendo autonomia para seus usuários.
 
 ---
 
@@ -125,9 +126,9 @@ Criar uma plataforma digital que ajude os usuários a organizar:
 
 ## ⚙️ Tecnologias Utilizadas
 
-- **Python Flask:** Interface web.
-- **Java:** Backend com as funcionalidades de formulários e requisições ao banco de dados.
-- **PostgreSQL:** Banco de dados.
+- **HTML/CSS:** Interface web.
+- **Python Flask:** Backend com as funcionalidades de formulários, requisições ao banco de dados e conexões entre páginas.
+- **SQLAlchemy:** Biblioteca de interação para o Banco de dados.
 
 ---
 
