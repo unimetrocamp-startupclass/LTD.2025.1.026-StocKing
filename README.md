@@ -173,7 +173,7 @@ graph TD
     G -- SIM --> H(Direcionado para tela de cadastro de produtos)
     G -- NÃO --> I(Direcionado para tela de NÃO TEM PERMISSÃO DE ACESSO)
 
-    I -- Volta para o Login/Cadastro --> B
+    I --> B
 
 ## Tecnologias Utilizadas
 
