@@ -196,6 +196,7 @@ _Descrição: Esta tela permite que usuários existentes façam login no sistema
 #### Tela de Cadastro
 
 ![Tela de Cadastro](SysImg/Cadastro.png)
+
 _Descrição: Esta tela permite que novos usuários se cadastrem e então façam login no sistema._
 
 #### Tela de Sem Permissão
@@ -216,8 +217,6 @@ _Descrição: Esta tela é onde o usuário pode editar as informações de um pr
 ### Códigos das principais funcionalidades:
 
 ```python
-# app.py
-
 # app.py
 import os
 from flask import Flask
@@ -256,13 +255,12 @@ def create_app():
 
     return app
 
-```
-
 # --- EXECUÇÃO ---
 
 if **name** == '**main**':
 app = create_app()
 app.run(debug=True, port=5000)
+```
 
 ---
 
@@ -275,7 +273,3 @@ app.run(debug=True, port=5000)
 ---
 
 > _Projeto acadêmico desenvolvido com fins educativos. Todos os dados são fictícios e utilizados para simulação de um ambiente real de desenvolvimento de software._
-
-```
-
-```
