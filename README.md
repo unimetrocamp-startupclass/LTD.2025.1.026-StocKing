@@ -158,7 +158,7 @@ Criar uma plataforma digital que ajude os usuários a organizar:
 
 ### Modelagem do Sistema:
 
-````mermaid
+```mermaid
 graph TD
     A[Start] --> B(Tela de Login/Cadastro)
     B --> C{O usuário possui cadastro?}
@@ -191,27 +191,27 @@ graph TD
 #### Tela de Login
 
 ![Tela de Login/Cadastro](SysImg/Login.png)
-*Descrição: Esta tela permite que usuários existentes façam login no sistema.*
+_Descrição: Esta tela permite que usuários existentes façam login no sistema._
 
 #### Tela de Cadastro
 
 ![Tela de Cadastro](SysImg/Cadastro.png)
-*Descrição: Esta tela permite que novos usuários se cadastrem e então façam login no sistema.*
+_Descrição: Esta tela permite que novos usuários se cadastrem e então façam login no sistema._
 
 #### Tela de Sem Permissão
 
 ![Tela de Sem Permissão](SysImg/NoAcess.png)
-*Descrição: Esta tela mostra ao usuário que foi cadastrado sem permissão de administrador, que ele não tem acesso ao sistema principal.*
+_Descrição: Esta tela mostra ao usuário que foi cadastrado sem permissão de administrador, que ele não tem acesso ao sistema principal._
 
 #### Tela de Cadastro de Produtos
 
 ![Tela de Cadastro de Produtos](SysImg/CadastroProd.png)
-*Descrição: Esta tela é onde os produtos são cadastrados.*
+_Descrição: Esta tela é onde os produtos são cadastrados._
 
 #### Tela de Editar produto cadastrado
 
 ![Tela de Edição](SysImg/EditProd.png)
-*Descrição: Esta tela é onde o usuário pode editar as informações de um produtos já cadastrado.*
+_Descrição: Esta tela é onde o usuário pode editar as informações de um produtos já cadastrado._
 
 ### Códigos das principais funcionalidades:
 
@@ -259,9 +259,10 @@ def create_app():
 ```
 
 # --- EXECUÇÃO ---
-if __name__ == '__main__':
-    app = create_app()
-    app.run(debug=True, port=5000)
+
+if **name** == '**main**':
+app = create_app()
+app.run(debug=True, port=5000)
 
 ---
 
@@ -274,4 +275,7 @@ if __name__ == '__main__':
 ---
 
 > _Projeto acadêmico desenvolvido com fins educativos. Todos os dados são fictícios e utilizados para simulação de um ambiente real de desenvolvimento de software._
-````
+
+```
+
+```
