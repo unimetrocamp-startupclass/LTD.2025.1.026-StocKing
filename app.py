@@ -1,4 +1,4 @@
-# app.py (Versão Corrigida)
+# app.py
 import os
 from flask import Flask
 from db import db
