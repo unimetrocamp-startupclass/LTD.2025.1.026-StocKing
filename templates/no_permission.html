@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center mt-5">
+        <div class="card">
+            <div class="card-header bg-danger text-white">
+                <h1>Acesso Negado</h1>
+            </div>
+            <div class="card-body">
+                <p class="lead">Seu usuário não tem permissão para acessar o painel de gerenciamento de estoque.</p>
+                <p>Para tentar novamente com outra conta, você precisa sair primeiro.</p>
+                
+                <a href="{{ url_for('main.logout') }}" class="btn btn-primary mt-3">Retornar para a Página de Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

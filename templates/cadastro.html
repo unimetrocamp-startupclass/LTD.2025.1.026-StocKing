@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center">Criar Conta</h1>
+                <form method="POST" action="{{ url_for('main.cadastro') }}">
+                    <div class="form-group">
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" name="senha" required>
+                    </div>
+                    
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" onclick="togglePasswordVisibility('senha')">
+                        <label class="form-check-label">Mostrar Senha</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmar_senha">Confirmar Senha</label>
+                        <input type="password" class="form-control" id="confirmar_senha" name="confirmar_senha" required>
+                    </div>
+                    
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" onclick="togglePasswordVisibility('confirmar_senha')">
+                        <label class="form-check-label">Mostrar Senha</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="permission" name="permission">
+                        <label class="form-check-label" for="permission">Conceder permissão de administrador</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Cadastrar</button>
+                </form>
+                <div class="text-center mt-3">
+                    <p>Já tem uma conta? <a href="{{ url_for('main.login') }}">Faça Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+# Ambiente Virtual
+/env/
+/venv/
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+
+# Banco de dados SQLite
+# Geralmente não enviamos o banco de dados, 
+# pois ele é recriado ao rodar o app.
+# Se seu professor PRECISAR do banco com os dados que você já cadastrou,
+# apague a linha abaixo. Caso contrário, mantenha.
+/instance/
+
+# Arquivos de sistema (macOS e Windows)
+.DS_Store
+Thumbs.db
