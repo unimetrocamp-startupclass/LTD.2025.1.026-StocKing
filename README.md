@@ -284,7 +284,7 @@ app.run(debug=True, port=5000)
 
 ---
 
-## 110. Divulgação
+## 10. Divulgação
 
 ### LinkedIn do Projeto:
 
@@ -356,15 +356,12 @@ Desde já nos colocamos à sua disposição para quaisquer esclarecimentos.
 Atenciosamente,
 
 Campinas, _(dia)_ de _(mês)_ de 202 _(ano)_ .
-<br>
-<br>
 
 ---
 
 Assinatura Direção Acadêmica da IES
 
-<br>
-<br>
+---
 
 Assinatura Docente
 ```
@@ -373,7 +370,7 @@ Assinatura Docente
 
 ## Carta de Autorização
 
-´´´md
+```md
 Eu, (preencher com nome do responsável), (preencher com cargo ocupado), da (nome da empresa, organização, associação, escola, secretaria, etc., situada no endereço – inserir o endereço), autorizo a realização das seguintes atividades acadêmicas do componente extensionista <código e nome da disciplina>, do Centro Universitário Unimetrocamp, sob orientação do Prof. Kesede Rodrigues Julio.
 
 Atividades:
@@ -401,20 +398,22 @@ Campinas, _(dia)_ de _(mês)_ de 202 _(ano)_ .
 ---
 
 _(Assinatura, nome completo do responsável, email de contato e com carimbo da empresa)_
-
-´´´
+```
 
 ---
 
 ## 13. Relato indovidual do processo
 
-- Erick Valente Sprogis
+- Erick Valente Sprogis:
+
   _Fui responsável pela interface e pela experiência do usuário (UX). Estruturei todos os templates HTML, desde a página de login até o dashboard principal de produtos, utilizando o framework Bootstrap para criar um design limpo e responsivo. Também adicionei interatividade com JavaScript, como a função de 'mostrar/esconder senha', para melhorar a usabilidade. Meu trabalho foi garantir que a aplicação não só funcionasse, mas que fosse visualmente agradável e intuitiva, conectando o visual com os dados vindos do backend através do Jinja2._
 
-- Jhonatam Victor Conde Ramos
+- Jhonatam Victor Conde Ramos:
+
   _No projeto, foquei na construção do backend e do banco de dados. Fui responsável por desenhar a estrutura das tabelas de usuários e produtos e por implementar os modelos com SQLAlchemy. Programei toda a lógica de servidor em Flask, incluindo o sistema de login seguro com permissões de administrador e as funcionalidades para cadastrar, editar e excluir produtos. Essencialmente, construí o motor que faz toda a aplicação funcionar, garantindo que os dados fossem gerenciados de forma segura e eficiente no lado do servidor._
 
-- Gustavo Henrique Ribeiro
+- Gustavo Henrique Ribeiro:
+
   _Minha contribuição focou na gestão, documentação e análise de dados do projeto. Iniciei configurando nosso repositório no GitHub, incluindo um .gitignore para manter o projeto limpo, e escrevi a documentação principal no README.md. Após a aplicação estar funcional, executei o script de análise (analise.py) para extrair informações do banco. Utilizando Pandas e Matplotlib, gerei os gráficos e tabelas que formaram a base da nossa apresentação final, transformando os dados brutos do sistema em insights visuais._
 
 ---
